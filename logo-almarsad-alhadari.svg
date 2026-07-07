@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1020 1000" xmlns="http://www.w3.org/2000/svg" font-family="Tahoma, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <clipPath id="clipTopA"><polygon points="260,300 390,365 260,430 130,365"/></clipPath>
+    <clipPath id="clipLeftB"><polygon points="330,255 480,330 480,760 330,685"/></clipPath>
+    <clipPath id="clipRightB_upper"><polygon points="480,330 630,255 630,405.5 480,480.5"/></clipPath>
+    <clipPath id="clipRightB_lower"><polygon points="480,480.5 630,405.5 630,685 480,760"/></clipPath>
+    <clipPath id="clipTopC"><polygon points="760,270 890,335 760,400 630,335"/></clipPath>
+
+    <pattern id="diagStripes" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="11" height="22" fill="#FFFFFF"/>
+    </pattern>
+    <pattern id="dotsPattern" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="17" cy="17" r="7.5" fill="#FFFFFF"/>
+    </pattern>
+    <pattern id="vStripes" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="8" height="16" fill="#FFFFFF"/>
+    </pattern>
+  </defs>
+
+  <!-- ===================== BLOCK A (yellow, left) ===================== -->
+  <!-- Right face (teal) -->
+  <polygon points="260,430 390,365 390,625 260,690" fill="#17A387"/>
+  <!-- Left face (yellow) -->
+  <polygon points="130,365 260,430 260,690 130,625" fill="#F4C430"/>
+  <!-- Top face (yellow + diagonal stripes) -->
+  <polygon points="260,300 390,365 260,430 130,365" fill="#F4C430"/>
+  <polygon points="260,300 390,365 260,430 130,365" fill="url(#diagStripes)" clip-path="url(#clipTopA)"/>
+
+  <!-- leaf icon on left face -->
+  <g stroke="#1B3A5C" stroke-width="6" fill="#1B3A5C" stroke-linecap="round">
+    <line x1="190" y1="470" x2="190" y2="560" />
+    <path d="M190,485 C165,478 155,495 150,510 C170,515 185,505 190,485 Z"/>
+    <path d="M190,510 C215,503 225,520 230,535 C210,540 195,530 190,510 Z"/>
+  </g>
+  <text x="150" y="605" font-size="46" font-weight="bold" fill="#1B3A5C">50%</text>
+
+  <!-- ===================== BLOCK B (middle, tallest) ===================== -->
+  <!-- Right face upper (red) -->
+  <polygon points="480,330 630,255 630,405.5 480,480.5" fill="#E7573F"/>
+  <!-- Right face lower (green + vertical stripes) -->
+  <polygon points="480,480.5 630,405.5 630,685 480,760" fill="#17A387"/>
+  <polygon points="480,480.5 630,405.5 630,685 480,760" fill="url(#vStripes)" clip-path="url(#clipRightB_lower)"/>
+  <!-- Left face (gray + dots) -->
+  <polygon points="330,255 480,330 480,760 330,685" fill="#8E8A85"/>
+  <polygon points="330,255 480,330 480,760 330,685" fill="url(#dotsPattern)" clip-path="url(#clipLeftB)"/>
+  <!-- Top face (beige) -->
+  <polygon points="480,180 630,255 480,330 330,255" fill="#F1E1D4"/>
+
+  <text x="400" y="720" font-size="46" font-weight="bold" fill="#1B3A5C">75%</text>
+
+  <!-- ===================== BLOCK C (right, orange/navy) ===================== -->
+  <!-- Right face upper (peach) -->
+  <polygon points="760,400 890,335 760,740" fill="#F3D9C4"/>
+  <!-- Right face lower (green) -->
+  <polygon points="890,335 890,675 760,740" fill="#17A387"/>
+  <!-- Left face (navy) -->
+  <polygon points="630,335 760,400 760,740 630,675" fill="#1B3A5C"/>
+  <!-- Top face (orange + sunburst) -->
+  <polygon points="760,270 890,335 760,400 630,335" fill="#E8792E"/>
+  <g clip-path="url(#clipTopC)" stroke="#1B3A5C" stroke-width="5" stroke-linecap="round">
+    <g transform="translate(760,335)">
+      <line x1="0" y1="-55" x2="0" y2="-30"/>
+      <line x1="0" y1="55" x2="0" y2="30"/>
+      <line x1="-55" y1="0" x2="-30" y2="0"/>
+      <line x1="55" y1="0" x2="30" y2="0"/>
+      <line x1="-39" y1="-39" x2="-21" y2="-21"/>
+      <line x1="39" y1="-39" x2="21" y2="-21"/>
+      <line x1="-39" y1="39" x2="-21" y2="21"/>
+      <line x1="39" y1="39" x2="21" y2="21"/>
+      <line x1="-15" y1="-53" x2="-8" y2="-29"/>
+      <line x1="15" y1="-53" x2="8" y2="-29"/>
+      <line x1="-15" y1="53" x2="-8" y2="29"/>
+      <line x1="15" y1="53" x2="8" y2="29"/>
+      <line x1="-53" y1="-15" x2="-29" y2="-8"/>
+      <line x1="-53" y1="15" x2="-29" y2="8"/>
+      <line x1="53" y1="-15" x2="29" y2="-8"/>
+      <line x1="53" y1="15" x2="29" y2="8"/>
+    </g>
+  </g>
+
+  <text x="800" y="660" font-size="42" font-weight="bold" fill="#1B3A5C">35%</text>
+
+  <!-- ===================== TEXT ===================== -->
+  <text x="510" y="870" text-anchor="middle" font-size="78" font-weight="bold" fill="#1B3A5C">المرصد الحضري</text>
+  <text x="510" y="935" text-anchor="middle" font-size="42" fill="#1B3A5C">محافظة جنوب سيناء</text>
+</svg>
